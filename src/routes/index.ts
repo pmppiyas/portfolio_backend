@@ -1,24 +1,24 @@
-import { Router } from "express";
-import { BlogRoutes } from "../module/blog/blog.routes.js";
-import { AuthRouter } from "../module/user/user.routes.js";
-import { PostRoutes } from "../module/post/post.routes.js";
-const router = Router();
+import { Router } from 'express';
+import { BlogRoutes } from '../module/blog/blog.routes.js';
+import { AuthRouter } from '../module/user/user.routes.js';
+import { PostRoutes } from '../module/post/post.routes.js';
+const router: Router = Router();
 
 const moduleRoutes = [
   {
-    path: "/blog",
+    path: '/blog',
     route: BlogRoutes,
   },
   {
-    path: "/auth",
+    path: '/auth',
     route: AuthRouter,
   },
   {
-    path: "/project",
+    path: '/project',
     route: PostRoutes,
   },
   {
-    path: "/post",
+    path: '/post',
     route: PostRoutes,
   },
 ];
